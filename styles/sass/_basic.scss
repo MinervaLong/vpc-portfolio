@@ -1,0 +1,26 @@
+@use 'variables';
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid black;*/
+}
+
+body {
+    font-family: variables.$fontFamily-primary;
+    color: variables.$darkFontColor;
+    font-size: variables.$fontSize-body; 
+    
+}
+
+img {
+    border-radius: 50%;
+    max-width: 100%;
+}
