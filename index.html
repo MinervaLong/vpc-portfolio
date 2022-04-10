@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vanesa Perea Portfolio</title>
+    <!--To make sure your app works fine in small and big devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Normalize is a CSS file that provides cross-browser consistency in HTML style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">    
+    <!--CSS File-->
+    <link rel="stylesheet" href="styles/css/index.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!--HOME NAVIGATION MENU-->
+    <header>
+        <nav class="nav">
+                <ul class="nav__menu">
+                    <li class="nav__menuItem nav__menuItem--nameJob">
+                        <div class="menuItem__authorWrapper">
+                            <h1>Vanesa <span>Perea</span></h1>
+                            <h2>Front-End Developer <span>in progress</span></h2>
+                        </div>                    
+                    </li>
+                    <li class="nav__menuItem nav__menuItem--about nav__menuItem--hover">
+                        <a href="#modalAbout"  data-target='#modalAbout' class="nav__menuItemLink modal__trigger">
+                            <img src="./assets/images/about.png" alt="About" />
+                        </a>
+                                   
+                    </li>
+                    <li class="nav__menuItem nav__menuItem--photo">
+                        <img src="./assets/images/photo.jpg" alt="Photo" class="nav__menuItemLink" />                    
+                    </li>
+                    <li class="nav__menuItem nav__menuItem--portfolio nav__menuItem--hover">
+                        <a href="#modalPort" data-target='#modalPort' class="nav__menuItemLink modal__trigger">
+                            <img src="./assets/images/portfolio.png" alt="Portfolio">
+                        </a>                                            
+                    </li>
+                    <li class="nav__menuItem nav__menuItem--skills nav__menuItem--hover">
+                        <a href="#modalSkills" data-target='#modalSkills' class="nav__menuItemLink modal__trigger">
+                            <img src="./assets/images/skills.png" alt="Skills">
+                        </a>                                          
+                    </li>
+                    <li class="nav__menuItem nav__menuItem--clouds">
+                        <img src="./assets/images/clouds.jpg" alt="Clouds" class="nav__menuItemLink" />
+                    </li>
+                    <li class="nav__menuItem nav__menuItem--circuit">
+                        <img src="./assets/images/circuit.jpg" alt="Circuit" class="nav__menuItemLink" />
+                    </li>
+                    <li class="nav__menuItem nav__menuItem--hits nav__menuItem--hover">
+                        <a href="#modalHits" data-target='#modalHits' class="nav__menuItemLink modal__trigger">
+                            <img src="./assets/images/hits.png" alt="Hits">
+                        </a>                   
+                    </li>
+                    <li class="nav__menuItem nav__menuItem--snowflake">
+                        <img src="./assets/images/snowflake.jpg" alt="Snowflake" class="nav__menuItemLink" />
+                    </li>
+                    <li class="nav__menuItem nav__menuItem--code">
+                        <img src="./assets/images/code.jpg" alt="Code" class="nav__menuItemLink" />
+                    </li>
+                    <li class="nav__menuItem nav__menuItem--mail nav__menuItem--hover">
+                        <a href='#modalMail' data-target="#modalMail" class="nav__menuItemLink modal__trigger">
+                            <img src="./assets/images/contact.png" alt="Contact">
+                        </a>                   
+                    </li>
+                    <li class="nav__menuItem nav__menuItem--pc">
+                        <img src="./assets/images/pc.jpg" alt="PC" class="nav__menuItemLink" />
+                    </li>
+                    <li class="nav__menuItem nav__menuItem--socialMedia">
+                        <div class="menuItem__socialWrapper">
+                            <a href="#" class="nav__menuItemLink nav__menuItemLink--social"><img src="./assets/icons/logo-github.svg" alt="Github"></a>
+                            <a href="#" class="nav__menuItemLink nav__menuItemLink--social"><img src="./assets/icons/logo-linkedin.svg" alt="Linkedin"></a>
+                        </div>                    
+                    </li>
+                </ul>
+        </nav> 
+    </header>   
+    <!--END OF HOME NAVIGATION MENU-->
+
+    <!--MODALS WITH CONTENT-->
+    <main>
+        <!--About Modal-->
+        <section class="modal" id="modalAbout">
+            <div class="modal__dialog aboutStyle">
+                <header class="modal__header">
+                    <!-- modal close button -->
+                    <div class="modal__headingCircles">
+                        <div>
+                            <img src="./assets/icons/left-circle.png" alt="" srcset="">
+                        </div>
+                        <div>
+                            <img src="./assets/icons/middle-circle.png" alt="" srcset="">
+                        </div>                       
+                        <a href='' class="modal__close">
+                            <img src="./assets/icons/close-circle.png" alt="" srcset="">
+                        </a>                        
+                    </div>                    
+                </header>
+                <section class="modal__content"></section>
+                <footer class="modal__footer"></footer>
+            </div>
+        </section>
+         <!--Portfolio Modal-->
+         <section class="modal" id="modalPort">
+            <div class="modal__dialog portfStyle">
+                <header class="modal__header">
+                    <!-- modal close button -->
+                    <div class="modal__headingCircles">
+                        <div>
+                            <img src="./assets/icons/left-circle.png" alt="" srcset="">
+                        </div>
+                        <div>
+                            <img src="./assets/icons/middle-circle.png" alt="" srcset="">
+                        </div>                       
+                        <a href='' class="modal__close">
+                            <img src="./assets/icons/close-circle.png" alt="" srcset="">
+                        </a>                        
+                    </div>    
+                </header>
+                <section class="modal__content"></section>
+                <footer class="modal__footer"></footer>
+            </div>
+        </section>
+         <!--Skills Modal-->
+         <section class="modal" id="modalSkills">
+            <div class="modal__dialog  skillsStyle">
+                <header class="modal__header">
+                    <!-- modal close button -->
+                    <div class="modal__headingCircles">
+                        <div>
+                            <img src="./assets/icons/left-circle.png" alt="" srcset="">
+                        </div>
+                        <div>
+                            <img src="./assets/icons/middle-circle.png" alt="" srcset="">
+                        </div>                       
+                        <a href='' class="modal__close">
+                            <img src="./assets/icons/close-circle.png" alt="" srcset="">
+                        </a>                        
+                    </div>    
+                </header>
+                <section class="modal__content"></section>
+                <footer class="modal__footer"></footer>
+            </div>
+        </section>
+        <!--Hits Modal-->
+        <section class="modal" id="modalHits">
+            <div class="modal__dialog hitsStyle">
+                <header class="modal__header">
+                    <!-- modal close button -->
+                    <div class="modal__headingCircles">
+                        <div>
+                            <img src="./assets/icons/left-circle.png" alt="" srcset="">
+                        </div>
+                        <div>
+                            <img src="./assets/icons/middle-circle.png" alt="" srcset="">
+                        </div>                       
+                        <a href='' class="modal__close">
+                            <img src="./assets/icons/close-circle.png" alt="" srcset="">
+                        </a>                        
+                    </div>    
+                </header>
+                <section class="modal__content"></section>
+                <footer class="modal__footer"></footer>
+            </div>
+        </section>
+        <!--Mail Modal-->
+        <section class="modal" id="modalMail">
+            <div class="modal__dialog mailStyle">
+                <header class="modal__header">
+                    <!-- modal close button -->
+                    <div class="modal__headingCircles">
+                        <div>
+                            <img src="./assets/icons/left-circle.png" alt="" srcset="">
+                        </div>
+                        <div>
+                            <img src="./assets/icons/middle-circle.png" alt="" srcset="">
+                        </div>                       
+                        <a href='' class="modal__close">
+                            <img src="./assets/icons/close-circle.png" alt="" srcset="">
+                        </a>                        
+                    </div>    
+                </header>
+                <section class="modal__content"></section>
+                <footer class="modal__footer"></footer>
+            </div>
+        </section>
+
+    </main>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
