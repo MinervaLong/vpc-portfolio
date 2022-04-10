@@ -400,7 +400,7 @@ img {
   width: 80vw;
   height: 75vh;
   border-radius: 5px;
-  background-color: #f7eaea;
+  background-color: rgb(247, 234, 234);
   overflow: auto;
   cursor: default;
 }
@@ -410,16 +410,13 @@ img {
     height: 100vh;
   }
 }
-.modal .modal__dialog .modal__header {
+.modal .modal__dialog .modal__closeWrapper {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   font-size: 1.5rem;
 }
-.modal .modal__dialog .modal__header .modal__heading {
-  align-self: center;
-}
-.modal .modal__dialog .modal__header .modal__headingCircles {
+.modal .modal__dialog .modal__closeWrapper .modal__circles {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -437,18 +434,17 @@ img {
 }
 
 /* PARTICULAR STYLES */
-/* About modal */
-.aboutStyle, .mailStyle {
+.modal__dialog--aboutStyle, .modal__dialog--mailStyle {
   border: 10px solid #54808D;
   padding: 3rem;
 }
 
-.portfStyle {
+.modal__dialog--portfStyle {
   border: 10px solid #264E5B;
   padding: 3rem;
 }
 
-.skillsStyle, .hitsStyle {
+.modal__dialog--skillsStyle, .modal__dialog--hitsStyle {
   border: 10px solid #AAC2C7;
   padding: 3rem;
 }
