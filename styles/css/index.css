@@ -24,11 +24,6 @@ body {
   font-size: 1.2rem;
 }
 
-img {
-  border-radius: 50%;
-  max-width: 100%;
-}
-
 /* COLORS */
 /* FONTS */
 /* MODALS */
@@ -48,11 +43,6 @@ body {
   font-family: "Roboto", serif;
   color: #333333;
   font-size: 1.2rem;
-}
-
-img {
-  border-radius: 50%;
-  max-width: 100%;
 }
 
 /* Responsive*/
@@ -101,6 +91,10 @@ img {
 .nav .nav__menu .nav__menuItem--hover:hover {
   transform: scale(1.2);
   transition: transform 330ms ease-in-out;
+}
+.nav .nav__menu .nav__menuItem--Img {
+  border-radius: 50%;
+  max-width: 100%;
 }
 .nav .nav__menu .nav__menuItem--nameJob {
   grid-column: 1/4;
@@ -364,11 +358,6 @@ body {
   font-family: "Roboto", serif;
   color: #333333;
   font-size: 1.2rem;
-}
-
-img {
-  border-radius: 50%;
-  max-width: 100%;
 }
 
 /* Responsive*/

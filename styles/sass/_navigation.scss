@@ -51,6 +51,12 @@
             transition: transform 330ms ease-in-out;
         }
 
+        .nav__menuItem--Img{
+            border-radius: 50%;
+            max-width: 100%;
+        }
+        
+
         /* ELEMENTS OF GRID AREA */
 
         .nav__menuItem--nameJob {
