@@ -59,7 +59,7 @@
         .modal__close {            
             cursor: pointer;
         }
-        
+       
     }
  
 }
@@ -70,8 +70,8 @@
     opacity: 1;
 }
 
-/* PARTICULAR STYLES */
 
+/* PARTICULAR STYLES */
 
 .modal__dialog--aboutStyle, .modal__dialog--mailStyle {
     @include basic-modal-style(variables.$blueColor); 
@@ -84,5 +84,7 @@
 .modal__dialog--skillsStyle, .modal__dialog--hitsStyle {
     @include basic-modal-style(variables.$lightBlueColor); 
 }
+
+
 
 
