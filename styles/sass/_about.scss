@@ -15,7 +15,7 @@
 
     @include respond(medium) {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 10% 40% 30%;
+        grid-template-rows: 10% 30% 45%;
         grid-template-areas:
         ". . . "
         "text text text "
