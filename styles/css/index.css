@@ -441,12 +441,21 @@ body {
 /* COLORS */
 /* FONTS */
 /* MODALS */
+/* Responsive*/
+/*Modal basic styles*/
 .modal__content--about {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   height: 91%;
   grid-template-areas: "text text text text . . " "text text text text . . " "text text text text . . " "button . . . header header";
+}
+@media (max-width: 1000px) {
+  .modal__content--about {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 40% 30%;
+    grid-template-areas: ". . . " "text text text " ". . . " "button header header";
+  }
 }
 .modal__content--about .heading {
   grid-area: header;
