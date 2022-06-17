@@ -441,12 +441,29 @@ body {
 /* COLORS */
 /* FONTS */
 /* MODALS */
+/* Responsive*/
+/*Modal basic styles*/
 .modal__content--about {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   height: 91%;
   grid-template-areas: "text text text text . . " "text text text text . . " "text text text text . . " "button . . . header header";
+}
+@media (max-width: 1000px) {
+  .modal__content--about {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 30% 45%;
+    grid-template-areas: ". . . " "text text text " ". . . " "button header header";
+  }
+}
+@media (max-width: 700px) {
+  .modal__content--about {
+    grid-template-columns: auto 50%;
+    grid-template-rows: 8% 1fr 1fr;
+    row-gap: 3%;
+    grid-template-areas: ".  header " "text text " "button .";
+  }
 }
 .modal__content--about .heading {
   grid-area: header;
@@ -476,6 +493,11 @@ body {
   font-weight: 100;
   font-size: 20pt;
 }
+@media (max-width: 700px) {
+  .modal__content--about .content .content__titles h2 {
+    font-size: 16pt;
+  }
+}
 .modal__content--about .content .content__titles span {
   color: #54808D;
 }
@@ -502,4 +524,10 @@ body {
   font-weight: bolder;
   font-size: 12pt;
   letter-spacing: -1;
+}
+@media (max-width: 700px) {
+  .modal__content--about .buttonWrapper button {
+    padding: 0.8rem 0.6rem;
+    border-radius: 20px;
+  }
 }
