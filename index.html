@@ -28,47 +28,47 @@
                     </li>
                     <li class="nav__menuItem nav__menuItem--about nav__menuItem--hover">
                         <a href="#modalAbout"  data-target='#modalAbout' class="nav__menuItemLink modal__trigger">
-                            <img src="./assets/images/about.png" alt="About" />
+                            <img class="nav__menuItem--Img" src="./assets/images/about.png" alt="About" />
                         </a>
                                    
                     </li>
                     <li class="nav__menuItem nav__menuItem--photo">
-                        <img src="./assets/images/photo.jpg" alt="Photo" class="nav__menuItemLink" />                    
+                        <img class="nav__menuItem--Img" src="./assets/images/portrait.jpg" alt="Photo" class="nav__menuItemLink" />                    
                     </li>
                     <li class="nav__menuItem nav__menuItem--portfolio nav__menuItem--hover">
                         <a href="#modalPort" data-target='#modalPort' class="nav__menuItemLink modal__trigger">
-                            <img src="./assets/images/portfolio.png" alt="Portfolio">
+                            <img class="nav__menuItem--Img" src="./assets/images/portfolio.png" alt="Portfolio">
                         </a>                                            
                     </li>
                     <li class="nav__menuItem nav__menuItem--skills nav__menuItem--hover">
                         <a href="#modalSkills" data-target='#modalSkills' class="nav__menuItemLink modal__trigger">
-                            <img src="./assets/images/skills.png" alt="Skills">
+                            <img class="nav__menuItem--Img" src="./assets/images/skills.png" alt="Skills">
                         </a>                                          
                     </li>
                     <li class="nav__menuItem nav__menuItem--clouds">
-                        <img src="./assets/images/clouds.jpg" alt="Clouds" class="nav__menuItemLink" />
+                        <img class="nav__menuItem--Img" src="./assets/images/clouds.jpg" alt="Clouds" class="nav__menuItemLink" />
                     </li>
                     <li class="nav__menuItem nav__menuItem--circuit">
-                        <img src="./assets/images/circuit.jpg" alt="Circuit" class="nav__menuItemLink" />
+                        <img class="nav__menuItem--Img" src="./assets/images/circuit.jpg" alt="Circuit" class="nav__menuItemLink" />
                     </li>
                     <li class="nav__menuItem nav__menuItem--hits nav__menuItem--hover">
                         <a href="#modalHits" data-target='#modalHits' class="nav__menuItemLink modal__trigger">
-                            <img src="./assets/images/hits.png" alt="Hits">
+                            <img class="nav__menuItem--Img" src="./assets/images/hits.png" alt="Hits">
                         </a>                   
                     </li>
                     <li class="nav__menuItem nav__menuItem--snowflake">
-                        <img src="./assets/images/snowflake.jpg" alt="Snowflake" class="nav__menuItemLink" />
+                        <img class="nav__menuItem--Img" src="./assets/images/snowflake.jpg" alt="Snowflake" class="nav__menuItemLink" />
                     </li>
                     <li class="nav__menuItem nav__menuItem--code">
-                        <img src="./assets/images/code.jpg" alt="Code" class="nav__menuItemLink" />
+                        <img class="nav__menuItem--Img" src="./assets/images/code.jpg" alt="Code" class="nav__menuItemLink" />
                     </li>
                     <li class="nav__menuItem nav__menuItem--mail nav__menuItem--hover">
                         <a href='#modalMail' data-target="#modalMail" class="nav__menuItemLink modal__trigger">
-                            <img src="./assets/images/contact.png" alt="Contact">
+                            <img class="nav__menuItem--Img" src="./assets/images/contact.png" alt="Contact">
                         </a>                   
                     </li>
                     <li class="nav__menuItem nav__menuItem--pc">
-                        <img src="./assets/images/pc.jpg" alt="PC" class="nav__menuItemLink" />
+                        <img class="nav__menuItem--Img" src="./assets/images/pc.jpg" alt="PC" class="nav__menuItemLink" />
                     </li>
                     <li class="nav__menuItem nav__menuItem--socialMedia">
                         <div class="menuItem__socialWrapper">
@@ -85,107 +85,134 @@
     <main>
         <!--About Modal-->
         <section class="modal" id="modalAbout">
-            <div class="modal__dialog aboutStyle">
-                <header class="modal__header">
-                    <!-- modal close button -->
-                    <div class="modal__headingCircles">
+            <div class="modal__dialog modal__dialog--aboutStyle">
+                <section class="modal__closeWrapper">                    
+                    <div class="modal__circles">
                         <div>
-                            <img src="./assets/icons/left-circle.png" alt="" srcset="">
+                            <img src="./assets/icons/left-circle.png" alt="">
                         </div>
                         <div>
-                            <img src="./assets/icons/middle-circle.png" alt="" srcset="">
-                        </div>                       
+                            <img src="./assets/icons/middle-circle.png" alt="">
+                        </div> 
+                        <!-- modal close button -->                      
                         <a href='' class="modal__close">
-                            <img src="./assets/icons/close-circle.png" alt="" srcset="">
+                            <img src="./assets/icons/close-circle.png" alt="">
                         </a>                        
                     </div>                    
-                </header>
-                <section class="modal__content"></section>
-                <footer class="modal__footer"></footer>
+                </section>
+                <section class="modal__content--about">
+                    <header class="heading">
+                        <img src="./assets/images/mod-headings/about/about-medium.png"
+                            sizes="38vw"
+                            srcset="./assets/images/mod-headings/about/about-large.png 1200w"
+                            alt="About heading"
+                            class="opacity">
+                    </header>
+                    <section class="content">
+                        <div class="content__titles">
+                            <h1>Vanesa <span>Perea</span></h1>
+                            <h2>Front-End Developer <span>in progress</span></h2>
+                        </div>
+                        
+                        <div class="content__text">
+                            <p>I am Vanesa Perea, a junior frontend developer based in El Vendrell, Spain.
+                            My motivation for intellectual challenges and constant seek for learning
+                            experiences, have taken me to switch careers from administration to programming.
+                            <br>
+                            My code skills are built upon a Web Design Professional Certificate, a
+                            Front End Bootcamp focus on React and self-paced online courses.
+                            </p>
+                            <p>I am a curious, result-oriented person who is used to self-taught learning
+                            and enjoys working on stimulant projects that improve people's lives.
+                            When I am not coding I like to read, hike with friends, play board games
+                            or divulge science fiction literature as a tool for critical thinking.
+                            </p>
+                        </div>                    
+                    </section>
+                    <section class="buttonWrapper">
+                        <button >Resume</button>
+                    </section>                   
+                </section>
             </div>
         </section>
          <!--Portfolio Modal-->
          <section class="modal" id="modalPort">
-            <div class="modal__dialog portfStyle">
-                <header class="modal__header">
-                    <!-- modal close button -->
-                    <div class="modal__headingCircles">
+            <div class="modal__dialog modal__dialog--portfStyle">
+                <section class="modal__closeWrapper">                    
+                    <div class="modal__circles">
                         <div>
-                            <img src="./assets/icons/left-circle.png" alt="" srcset="">
+                            <img src="./assets/icons/left-circle.png" alt="">
                         </div>
                         <div>
-                            <img src="./assets/icons/middle-circle.png" alt="" srcset="">
-                        </div>                       
+                            <img src="./assets/icons/middle-circle.png" alt="">
+                        </div> 
+                        <!-- modal close button -->                      
                         <a href='' class="modal__close">
-                            <img src="./assets/icons/close-circle.png" alt="" srcset="">
+                            <img src="./assets/icons/close-circle.png" alt="">
                         </a>                        
-                    </div>    
-                </header>
+                    </div>                    
+                </section>
                 <section class="modal__content"></section>
-                <footer class="modal__footer"></footer>
             </div>
         </section>
          <!--Skills Modal-->
          <section class="modal" id="modalSkills">
-            <div class="modal__dialog  skillsStyle">
-                <header class="modal__header">
-                    <!-- modal close button -->
-                    <div class="modal__headingCircles">
+            <div class="modal__dialog  modal__dialog--skillsStyle">
+                <section class="modal__closeWrapper">                    
+                    <div class="modal__circles">
                         <div>
-                            <img src="./assets/icons/left-circle.png" alt="" srcset="">
+                            <img src="./assets/icons/left-circle.png" alt="">
                         </div>
                         <div>
-                            <img src="./assets/icons/middle-circle.png" alt="" srcset="">
-                        </div>                       
+                            <img src="./assets/icons/middle-circle.png" alt="">
+                        </div> 
+                        <!-- modal close button -->                      
                         <a href='' class="modal__close">
-                            <img src="./assets/icons/close-circle.png" alt="" srcset="">
+                            <img src="./assets/icons/close-circle.png" alt="">
                         </a>                        
-                    </div>    
-                </header>
+                    </div>                    
+                </section>
                 <section class="modal__content"></section>
-                <footer class="modal__footer"></footer>
             </div>
         </section>
         <!--Hits Modal-->
         <section class="modal" id="modalHits">
-            <div class="modal__dialog hitsStyle">
-                <header class="modal__header">
-                    <!-- modal close button -->
-                    <div class="modal__headingCircles">
+            <div class="modal__dialog modal__dialog--hitsStyle">
+                <section class="modal__closeWrapper">                    
+                    <div class="modal__circles">
                         <div>
-                            <img src="./assets/icons/left-circle.png" alt="" srcset="">
+                            <img src="./assets/icons/left-circle.png" alt="">
                         </div>
                         <div>
-                            <img src="./assets/icons/middle-circle.png" alt="" srcset="">
-                        </div>                       
+                            <img src="./assets/icons/middle-circle.png" alt="">
+                        </div> 
+                        <!-- modal close button -->                      
                         <a href='' class="modal__close">
-                            <img src="./assets/icons/close-circle.png" alt="" srcset="">
+                            <img src="./assets/icons/close-circle.png" alt="">
                         </a>                        
-                    </div>    
-                </header>
+                    </div>                    
+                </section>
                 <section class="modal__content"></section>
-                <footer class="modal__footer"></footer>
             </div>
         </section>
-        <!--Mail Modal-->
+        <!--Contact Modal-->
         <section class="modal" id="modalMail">
-            <div class="modal__dialog mailStyle">
-                <header class="modal__header">
-                    <!-- modal close button -->
-                    <div class="modal__headingCircles">
+            <div class="modal__dialog modal__dialog--mailStyle">
+                <section class="modal__closeWrapper">                    
+                    <div class="modal__circles">
                         <div>
-                            <img src="./assets/icons/left-circle.png" alt="" srcset="">
+                            <img src="./assets/icons/left-circle.png" alt="">
                         </div>
                         <div>
-                            <img src="./assets/icons/middle-circle.png" alt="" srcset="">
-                        </div>                       
+                            <img src="./assets/icons/middle-circle.png" alt="">
+                        </div> 
+                        <!-- modal close button -->                      
                         <a href='' class="modal__close">
-                            <img src="./assets/icons/close-circle.png" alt="" srcset="">
+                            <img src="./assets/icons/close-circle.png" alt="">
                         </a>                        
-                    </div>    
-                </header>
+                    </div>                    
+                </section>
                 <section class="modal__content"></section>
-                <footer class="modal__footer"></footer>
             </div>
         </section>
 

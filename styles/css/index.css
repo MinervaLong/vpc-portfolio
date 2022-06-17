@@ -24,11 +24,6 @@ body {
   font-size: 1.2rem;
 }
 
-img {
-  border-radius: 50%;
-  max-width: 100%;
-}
-
 /* COLORS */
 /* FONTS */
 /* MODALS */
@@ -48,11 +43,6 @@ body {
   font-family: "Roboto", serif;
   color: #333333;
   font-size: 1.2rem;
-}
-
-img {
-  border-radius: 50%;
-  max-width: 100%;
 }
 
 /* Responsive*/
@@ -101,6 +91,10 @@ img {
 .nav .nav__menu .nav__menuItem--hover:hover {
   transform: scale(1.2);
   transition: transform 330ms ease-in-out;
+}
+.nav .nav__menu .nav__menuItem--Img {
+  border-radius: 50%;
+  max-width: 100%;
 }
 .nav .nav__menu .nav__menuItem--nameJob {
   grid-column: 1/4;
@@ -366,11 +360,6 @@ body {
   font-size: 1.2rem;
 }
 
-img {
-  border-radius: 50%;
-  max-width: 100%;
-}
-
 /* Responsive*/
 /*Modal basic styles*/
 /* GENERAL STYLES */
@@ -397,10 +386,10 @@ img {
 }
 .modal .modal__dialog {
   position: relative;
-  width: 80vw;
-  height: 75vh;
+  width: 85vw;
+  height: 80vh;
   border-radius: 5px;
-  background-color: #f7eaea;
+  background-color: white;
   overflow: auto;
   cursor: default;
 }
@@ -410,16 +399,13 @@ img {
     height: 100vh;
   }
 }
-.modal .modal__dialog .modal__header {
+.modal .modal__dialog .modal__closeWrapper {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   font-size: 1.5rem;
 }
-.modal .modal__dialog .modal__header .modal__heading {
-  align-self: center;
-}
-.modal .modal__dialog .modal__header .modal__headingCircles {
+.modal .modal__dialog .modal__closeWrapper .modal__circles {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -437,18 +423,83 @@ img {
 }
 
 /* PARTICULAR STYLES */
-/* About modal */
-.aboutStyle, .mailStyle {
+.modal__dialog--aboutStyle, .modal__dialog--mailStyle {
   border: 10px solid #54808D;
   padding: 3rem;
 }
 
-.portfStyle {
+.modal__dialog--portfStyle {
   border: 10px solid #264E5B;
   padding: 3rem;
 }
 
-.skillsStyle, .hitsStyle {
+.modal__dialog--skillsStyle, .modal__dialog--hitsStyle {
   border: 10px solid #AAC2C7;
   padding: 3rem;
+}
+
+/* COLORS */
+/* FONTS */
+/* MODALS */
+.modal__content--about {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 91%;
+  grid-template-areas: "text text text text . . " "text text text text . . " "text text text text . . " "button . . . header header";
+}
+.modal__content--about .heading {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.modal__content--about .heading .opacity {
+  opacity: 8%;
+}
+.modal__content--about .content {
+  grid-area: text;
+}
+.modal__content--about .content .content__titles {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+}
+.modal__content--about .content .content__titles h1 {
+  margin: 0;
+  font-weight: 900;
+}
+.modal__content--about .content .content__titles h2 {
+  font-weight: 100;
+  font-size: 20pt;
+}
+.modal__content--about .content .content__titles span {
+  color: #54808D;
+}
+.modal__content--about .content .content__text {
+  color: #54808D;
+  font-size: 13pt;
+}
+.modal__content--about .content .content__text > p:first-child {
+  margin: 2rem 0;
+}
+.modal__content--about .buttonWrapper {
+  grid-area: button;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.modal__content--about .buttonWrapper button {
+  padding: 0.8rem 2rem;
+  border-radius: 14px;
+  border: 1px solid #264E5B;
+  background-color: #264E5B;
+  color: white;
+  font-weight: bolder;
+  font-size: 12pt;
+  letter-spacing: -1;
 }
