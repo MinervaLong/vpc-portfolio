@@ -386,10 +386,10 @@ body {
 }
 .modal .modal__dialog {
   position: relative;
-  width: 80vw;
-  height: 75vh;
+  width: 85vw;
+  height: 80vh;
   border-radius: 5px;
-  background-color: rgb(247, 234, 234);
+  background-color: white;
   overflow: auto;
   cursor: default;
 }
@@ -436,4 +436,70 @@ body {
 .modal__dialog--skillsStyle, .modal__dialog--hitsStyle {
   border: 10px solid #AAC2C7;
   padding: 3rem;
+}
+
+/* COLORS */
+/* FONTS */
+/* MODALS */
+.modal__content--about {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 91%;
+  grid-template-areas: "text text text text . . " "text text text text . . " "text text text text . . " "button . . . header header";
+}
+.modal__content--about .heading {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.modal__content--about .heading .opacity {
+  opacity: 8%;
+}
+.modal__content--about .content {
+  grid-area: text;
+}
+.modal__content--about .content .content__titles {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+}
+.modal__content--about .content .content__titles h1 {
+  margin: 0;
+  font-weight: 900;
+}
+.modal__content--about .content .content__titles h2 {
+  font-weight: 100;
+  font-size: 20pt;
+}
+.modal__content--about .content .content__titles span {
+  color: #54808D;
+}
+.modal__content--about .content .content__text {
+  color: #54808D;
+  font-size: 13pt;
+}
+.modal__content--about .content .content__text > p:first-child {
+  margin: 2rem 0;
+}
+.modal__content--about .buttonWrapper {
+  grid-area: button;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.modal__content--about .buttonWrapper button {
+  padding: 0.8rem 2rem;
+  border-radius: 14px;
+  border: 1px solid #264E5B;
+  background-color: #264E5B;
+  color: white;
+  font-weight: bolder;
+  font-size: 12pt;
+  letter-spacing: -1;
 }
