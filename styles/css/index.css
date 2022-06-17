@@ -457,6 +457,14 @@ body {
     grid-template-areas: ". . . " "text text text " ". . . " "button header header";
   }
 }
+@media (max-width: 700px) {
+  .modal__content--about {
+    grid-template-columns: auto 50%;
+    grid-template-rows: 8% 1fr 1fr;
+    row-gap: 3%;
+    grid-template-areas: ".  header " "text text " "button .";
+  }
+}
 .modal__content--about .heading {
   grid-area: header;
   display: flex;
@@ -485,6 +493,11 @@ body {
   font-weight: 100;
   font-size: 20pt;
 }
+@media (max-width: 700px) {
+  .modal__content--about .content .content__titles h2 {
+    font-size: 16pt;
+  }
+}
 .modal__content--about .content .content__titles span {
   color: #54808D;
 }
@@ -511,4 +524,10 @@ body {
   font-weight: bolder;
   font-size: 12pt;
   letter-spacing: -1;
+}
+@media (max-width: 700px) {
+  .modal__content--about .buttonWrapper button {
+    padding: 0.8rem 0.6rem;
+    border-radius: 20px;
+  }
 }
