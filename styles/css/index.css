@@ -6,6 +6,10 @@
 /* COLORS */
 /* FONTS */
 /* MODALS */
+html {
+  font-size: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -18,12 +22,16 @@
 body {
   font-family: "Roboto", serif;
   color: #333333;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 /* COLORS */
 /* FONTS */
 /* MODALS */
+html {
+  font-size: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -36,7 +44,7 @@ body {
 body {
   font-family: "Roboto", serif;
   color: #333333;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 /* Responsive*/
@@ -101,7 +109,7 @@ body {
   font-size: 3rem;
 }
 .nav .nav__menu .nav__menuItem--nameJob h2 {
-  font-size: 1.6rem;
+  font-size: 1.5em;
 }
 @media (max-width: 1000px) {
   .nav .nav__menu .nav__menuItem--nameJob {
@@ -336,6 +344,10 @@ body {
 /* COLORS */
 /* FONTS */
 /* MODALS */
+html {
+  font-size: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -348,7 +360,7 @@ body {
 body {
   font-family: "Roboto", serif;
   color: #333333;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 
 /* Responsive*/
