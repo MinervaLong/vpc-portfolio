@@ -1,0 +1,36 @@
+@use 'basic';
+@use 'variables';
+@use 'mixins';
+
+.skills__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .skills__title {
+        font-size: 2.3rem;
+        @include skill-title-style();
+    }
+
+    .skills__list--layout {
+        @include skills-list-style($lightBlueColor, 1.6rem);
+    }
+
+    .skills__list--js {
+        @include skills-list-style($blueColor, 3.5rem);
+    }
+
+    .skills__list--pydb {
+        @include skills-list-style($darkBlueColor, 6.5rem);
+    }
+
+    .skills__list--wp {
+        @include skills-list-style($lightBlueColor, 5.5rem);
+    }
+
+    .skills__list--tools {
+        @include skills-list-style($blueColor, 1.6rem);
+    }
+}

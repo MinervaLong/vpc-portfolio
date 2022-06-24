@@ -1,8 +1,13 @@
 /* COLORS */
 /* FONTS */
 /* MODALS */
-/* Responsive*/
-/*Modal basic styles*/
+/* COLORS */
+/* FONTS */
+/* MODALS */
+/* Responsive */
+/*Modal basic styles */
+/* Skill title styles */
+/* Skills list styles */
 /* COLORS */
 /* FONTS */
 /* MODALS */
@@ -22,7 +27,7 @@ html {
 body {
   font-family: "Roboto", serif;
   color: #333333;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 /* COLORS */
@@ -44,11 +49,13 @@ html {
 body {
   font-family: "Roboto", serif;
   color: #333333;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
-/* Responsive*/
-/*Modal basic styles*/
+/* Responsive */
+/*Modal basic styles */
+/* Skill title styles */
+/* Skills list styles */
 /*NPM RUN SASS*/
 .nav {
   /* Center the menu in the middle of the layout */
@@ -360,11 +367,13 @@ html {
 body {
   font-family: "Roboto", serif;
   color: #333333;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
-/* Responsive*/
-/*Modal basic styles*/
+/* Responsive */
+/*Modal basic styles */
+/* Skill title styles */
+/* Skills list styles */
 /* GENERAL STYLES */
 .modal {
   position: fixed;
@@ -444,8 +453,29 @@ body {
 /* COLORS */
 /* FONTS */
 /* MODALS */
-/* Responsive*/
-/*Modal basic styles*/
+html {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid black;*/
+}
+
+body {
+  font-family: "Roboto", serif;
+  color: #333333;
+  font-size: 1em;
+}
+
+/* Responsive */
+/*Modal basic styles */
+/* Skill title styles */
+/* Skills list styles */
 .modal__content--about {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -533,4 +563,86 @@ body {
     padding: 0.8rem 0.6rem;
     border-radius: 20px;
   }
+}
+
+/* COLORS */
+/* FONTS */
+/* MODALS */
+html {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid black;*/
+}
+
+body {
+  font-family: "Roboto", serif;
+  color: #333333;
+  font-size: 1em;
+}
+
+/* Responsive */
+/*Modal basic styles */
+/* Skill title styles */
+/* Skills list styles */
+.skills__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.skills__wrapper .skills__title {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: #424242;
+  opacity: 8%;
+  padding: 1.2rem;
+  text-align: center;
+}
+.skills__wrapper .skills__list--layout {
+  background-color: #AAC2C7;
+  font-size: 1em;
+  font-weight: 900;
+  color: #FFF;
+  border-radius: 13px;
+  padding: 1.2rem 1.6rem 1.2rem 1.6rem;
+}
+.skills__wrapper .skills__list--js {
+  background-color: #54808D;
+  font-size: 1em;
+  font-weight: 900;
+  color: #FFF;
+  border-radius: 13px;
+  padding: 1.2rem 3.5rem 1.2rem 3.5rem;
+}
+.skills__wrapper .skills__list--pydb {
+  background-color: #264E5B;
+  font-size: 1em;
+  font-weight: 900;
+  color: #FFF;
+  border-radius: 13px;
+  padding: 1.2rem 6.5rem 1.2rem 6.5rem;
+}
+.skills__wrapper .skills__list--wp {
+  background-color: #AAC2C7;
+  font-size: 1em;
+  font-weight: 900;
+  color: #FFF;
+  border-radius: 13px;
+  padding: 1.2rem 5.5rem 1.2rem 5.5rem;
+}
+.skills__wrapper .skills__list--tools {
+  background-color: #54808D;
+  font-size: 1em;
+  font-weight: 900;
+  color: #FFF;
+  border-radius: 13px;
+  padding: 1.2rem 1.6rem 1.2rem 1.6rem;
 }

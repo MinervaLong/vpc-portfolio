@@ -1,19 +1,40 @@
+@use 'variables';
 
-
-/* Responsive*/
+/* Responsive */
 @mixin respond($breakpoint) {
-    @if $breakpoint == medium {
-      @media (max-width: 1000px) { @content };
-    }
-    @if $breakpoint == small {
-      @media (max-width: 700px) { @content };
-    }
+  @if $breakpoint == medium {
+    @media (max-width: 1000px) { @content };
+  }
+  @if $breakpoint == small {
+    @media (max-width: 700px) { @content };
+  }
 }
 
-/*Modal basic styles*/
+/*Modal basic styles */
 
 @mixin basic-modal-style($borderColor) {
-    border: 10px solid $borderColor;
-    padding: 3rem;
+  border: 10px solid $borderColor;
+  padding: 3rem;
 
+}
+
+/* Skill title styles */
+
+@mixin skill-title-style() {
+  font-weight: variables.$fontWeight-bold;
+  color: variables.$lightFontColor;
+  opacity: 8%;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+/* Skills list styles */
+
+@mixin skills-list-style($bgColor, $paddingSides) {
+  background-color: $bgColor;
+  font-size: variables.$fontSize-body;
+  font-weight: variables.$fontWeight-bold;
+  color: #FFF;
+  border-radius: 13px;
+  padding: 1.2rem $paddingSides 1.2rem $paddingSides;
 }
