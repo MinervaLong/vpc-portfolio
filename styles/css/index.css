@@ -591,58 +591,62 @@ body {
 /*Modal basic styles */
 /* Skill title styles */
 /* Skills list styles */
-.skills__wrapper {
+header {
+  border: 2px solid red;
+}
+
+.skills .skills__wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: f;
   align-items: center;
   flex-wrap: wrap;
 }
-.skills__wrapper .skills__title {
+.skills .skills__wrapper .skills__title {
   font-size: 2.3rem;
   font-weight: 900;
   color: #424242;
   opacity: 8%;
-  padding: 1.2rem;
+  padding: 1.2rem 1.2rem 0.5rem 0rem;
   text-align: center;
 }
-.skills__wrapper .skills__list--layout {
+.skills .skills__wrapper .skills__list--layout {
   background-color: #AAC2C7;
   font-size: 1em;
   font-weight: 900;
   color: #FFF;
   border-radius: 13px;
-  padding: 1.2rem 1.6rem 1.2rem 1.6rem;
+  padding: 1.2rem 1.6rem;
 }
-.skills__wrapper .skills__list--js {
+.skills .skills__wrapper .skills__list--js {
   background-color: #54808D;
   font-size: 1em;
   font-weight: 900;
   color: #FFF;
   border-radius: 13px;
-  padding: 1.2rem 3.5rem 1.2rem 3.5rem;
+  padding: 1.2rem 3.5rem;
 }
-.skills__wrapper .skills__list--pydb {
+.skills .skills__wrapper .skills__list--pydb {
   background-color: #264E5B;
   font-size: 1em;
   font-weight: 900;
   color: #FFF;
   border-radius: 13px;
-  padding: 1.2rem 6.5rem 1.2rem 6.5rem;
+  padding: 1.2rem 6.5rem;
 }
-.skills__wrapper .skills__list--wp {
+.skills .skills__wrapper .skills__list--wp {
   background-color: #AAC2C7;
   font-size: 1em;
   font-weight: 900;
   color: #FFF;
   border-radius: 13px;
-  padding: 1.2rem 5.5rem 1.2rem 5.5rem;
+  padding: 1.2rem 5.5rem;
 }
-.skills__wrapper .skills__list--tools {
+.skills .skills__wrapper .skills__list--tools {
   background-color: #54808D;
   font-size: 1em;
   font-weight: 900;
   color: #FFF;
   border-radius: 13px;
-  padding: 1.2rem 1.6rem 1.2rem 1.6rem;
+  padding: 1.2rem 1.6rem;
 }
