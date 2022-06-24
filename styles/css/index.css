@@ -6,6 +6,7 @@
 /* MODALS */
 /* Responsive */
 /*Modal basic styles */
+/* Skills Wrapper */
 /* Skill title styles */
 /* Skills list styles */
 /* COLORS */
@@ -29,6 +30,9 @@ body {
   color: #333333;
   font-size: 1em;
 }
+body .opacity {
+  opacity: 8%;
+}
 
 /* COLORS */
 /* FONTS */
@@ -52,8 +56,13 @@ body {
   font-size: 1em;
 }
 
+body .opacity {
+  opacity: 8%;
+}
+
 /* Responsive */
 /*Modal basic styles */
+/* Skills Wrapper */
 /* Skill title styles */
 /* Skills list styles */
 /*NPM RUN SASS*/
@@ -346,6 +355,7 @@ body {
 }
 .nav .nav__menu .nav__menuItem--socialMedia img {
   width: 40px;
+  opacity: 17%;
 }
 
 /* COLORS */
@@ -370,8 +380,13 @@ body {
   font-size: 1em;
 }
 
+body .opacity {
+  opacity: 8%;
+}
+
 /* Responsive */
 /*Modal basic styles */
+/* Skills Wrapper */
 /* Skill title styles */
 /* Skills list styles */
 /* GENERAL STYLES */
@@ -472,8 +487,13 @@ body {
   font-size: 1em;
 }
 
+body .opacity {
+  opacity: 8%;
+}
+
 /* Responsive */
 /*Modal basic styles */
+/* Skills Wrapper */
 /* Skill title styles */
 /* Skills list styles */
 .modal__content--about {
@@ -503,9 +523,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-}
-.modal__content--about .heading .opacity {
-  opacity: 8%;
 }
 .modal__content--about .content {
   grid-area: text;
@@ -587,66 +604,179 @@ body {
   font-size: 1em;
 }
 
-/* Responsive */
-/*Modal basic styles */
-/* Skill title styles */
-/* Skills list styles */
-header {
-  border: 2px solid red;
+body .opacity {
+  opacity: 8%;
 }
 
-.skills .skills__wrapper {
+/* Responsive */
+/*Modal basic styles */
+/* Skills Wrapper */
+/* Skill title styles */
+/* Skills list styles */
+.modal__content--skills {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 91%;
+}
+.modal__content--skills .heading--skills {
+  grid-column: 5/8;
+  grid-row: 5/6;
   display: flex;
   flex-direction: row;
-  justify-content: f;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+  z-index: 9;
+  /* Overlap  with heading--skills a layer under tools*/
 }
-.skills .skills__wrapper .skills__title {
+.modal__content--skills .skills__wrapper--layout {
+  grid-column: 1/6;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: first baseline;
+  flex-wrap: nowrap;
+}
+.modal__content--skills .skills__wrapper--layout .skills__title {
   font-size: 2.3rem;
   font-weight: 900;
   color: #424242;
   opacity: 8%;
-  padding: 1.2rem 1.2rem 0.5rem 0rem;
+  padding-right: 1.2rem;
   text-align: center;
 }
-.skills .skills__wrapper .skills__list--layout {
+.modal__content--skills .skills__wrapper--layout .skills__list--layout {
   background-color: #AAC2C7;
   font-size: 1em;
   font-weight: 900;
   color: #FFF;
   border-radius: 13px;
   padding: 1.2rem 1.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
-.skills .skills__wrapper .skills__list--js {
+.modal__content--skills .skills__wrapper--js {
+  grid-column: 2/7;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: first baseline;
+  flex-wrap: nowrap;
+  margin-left: -1rem;
+}
+.modal__content--skills .skills__wrapper--js .skills__title {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: #424242;
+  opacity: 8%;
+  padding-right: 1.2rem;
+  text-align: center;
+}
+.modal__content--skills .skills__wrapper--js .skills__list--js {
   background-color: #54808D;
   font-size: 1em;
   font-weight: 900;
   color: #FFF;
   border-radius: 13px;
   padding: 1.2rem 3.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
-.skills .skills__wrapper .skills__list--pydb {
+.modal__content--skills .skills__wrapper--pydb {
+  grid-column: 1/6;
+  grid-row: 3/4;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: first baseline;
+  flex-wrap: nowrap;
+  margin-left: 1.5rem;
+}
+.modal__content--skills .skills__wrapper--pydb .skills__title {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: #424242;
+  opacity: 8%;
+  padding-right: 1.2rem;
+  text-align: center;
+}
+.modal__content--skills .skills__wrapper--pydb .skills__list--pydb {
   background-color: #264E5B;
   font-size: 1em;
   font-weight: 900;
   color: #FFF;
   border-radius: 13px;
-  padding: 1.2rem 6.5rem;
+  padding: 1.2rem 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
-.skills .skills__wrapper .skills__list--wp {
+.modal__content--skills .skills__wrapper--wp {
+  grid-column: 1/6;
+  grid-row: 4/5;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: first baseline;
+  flex-wrap: nowrap;
+  z-index: 10;
+}
+.modal__content--skills .skills__wrapper--wp .skills__title {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: #424242;
+  opacity: 8%;
+  padding-right: 1.2rem;
+  text-align: center;
+}
+.modal__content--skills .skills__wrapper--wp .skills__list--wp {
   background-color: #AAC2C7;
   font-size: 1em;
   font-weight: 900;
   color: #FFF;
   border-radius: 13px;
   padding: 1.2rem 5.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
-.skills .skills__wrapper .skills__list--tools {
+.modal__content--skills .skills__wrapper--tools {
+  grid-column: 1/4;
+  grid-row: 5/6;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: first baseline;
+  flex-wrap: nowrap;
+  margin-left: 5rem;
+  position: static;
+  /* Overlap heading--skills */
+  z-index: 10;
+}
+.modal__content--skills .skills__wrapper--tools .skills__title {
+  font-size: 2.3rem;
+  font-weight: 900;
+  color: #424242;
+  opacity: 8%;
+  padding-right: 1.2rem;
+  text-align: center;
+}
+.modal__content--skills .skills__wrapper--tools .skills__list--tools {
   background-color: #54808D;
   font-size: 1em;
   font-weight: 900;
   color: #FFF;
   border-radius: 13px;
   padding: 1.2rem 1.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
