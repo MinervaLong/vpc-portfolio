@@ -14,5 +14,10 @@ html{ font-size: 100%; }
 body {
     font-family: variables.$fontFamily-primary;
     color: variables.$darkFontColor;
-    font-size: variables.$fontSize-body;    
+    font-size: variables.$fontSize-body;  
+    
+    .opacity {
+        opacity: 8%;
+    }
 }
+
