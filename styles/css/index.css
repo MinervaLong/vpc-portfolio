@@ -244,7 +244,7 @@ body .opacity {
 }
 @media (max-width: 1000px) {
   .nav .nav__menu .nav__menuItem--circuit {
-    grid-column: 2/3;
+    grid-column: 1/2;
     grid-row: 3/4;
   }
 }
