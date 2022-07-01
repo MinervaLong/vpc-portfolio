@@ -3,7 +3,7 @@
 /* Responsive */
 @mixin respond($breakpoint) {
   @if $breakpoint == medium {
-    @media (max-width: 1000px) { @content };
+    @media (max-width: 1294px) { @content };
   }
   @if $breakpoint == small {
     @media (max-width: 700px) { @content };
@@ -29,10 +29,13 @@
 /* Skill title styles */
 @mixin skill-title-style() {
   font-size: 2.3rem;
+  @include respond(medium) {
+    font-size: 1.3rem;
+  }
+  padding-right: 1.2rem;
   font-weight: variables.$fontWeight-bold;
   color: variables.$lightFontColor;
-  opacity: 8%;
-  padding-right: 1.2rem;
+  opacity: 8%;  
   text-align: center;
 }
 
