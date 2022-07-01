@@ -41,6 +41,10 @@
         }
         .skills__list--layout {
             @include skills-list-style($lightBlueColor, 1.6rem);
+            @include respond(medium){
+                padding-left: 1.4rem;
+                padding-right: 1.4rem;
+            }
         }
         
     }
@@ -60,7 +64,11 @@
         }
 
         .skills__list--js {
-            @include skills-list-style($blueColor, 3.5rem); 
+            @include skills-list-style($blueColor, 3.5rem);
+            @include respond(medium){
+                padding-left: 1.7rem;
+                padding-right: 1.7rem;
+            } 
         }
                
     }
@@ -81,6 +89,10 @@
 
         .skills__list--pydb {
             @include skills-list-style($darkBlueColor, 8rem);
+            @include respond(medium){
+                padding-left: 3.8rem;
+                padding-right: 3.8rem;
+            } 
     }
         }
         
@@ -101,6 +113,10 @@
 
         .skills__list--wp {
             @include skills-list-style($lightBlueColor, 5.5rem);
+            @include respond(medium){
+                padding-left: 3.5rem;
+                padding-right: 3.5rem;
+            } 
         }
         
     }
@@ -125,6 +141,10 @@
 
         .skills__list--tools {
             @include skills-list-style($blueColor, 1.6rem);
+            @include respond(medium){
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
         }
         
     }

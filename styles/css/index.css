@@ -671,14 +671,25 @@ body .opacity {
 .modal__content--skills .skills__wrapper--layout .skills__list--layout {
   background-color: #AAC2C7;
   font-size: 1em;
+  padding: 1.2rem 1.6rem;
   font-weight: 900;
   color: #FFF;
   border-radius: 13px;
-  padding: 1.2rem 1.6rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
+}
+@media (max-width: 1294px) {
+  .modal__content--skills .skills__wrapper--layout .skills__list--layout {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 1294px) {
+  .modal__content--skills .skills__wrapper--layout .skills__list--layout {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
 }
 .modal__content--skills .skills__wrapper--js {
   grid-column: 2/7;
@@ -712,14 +723,25 @@ body .opacity {
 .modal__content--skills .skills__wrapper--js .skills__list--js {
   background-color: #54808D;
   font-size: 1em;
+  padding: 1.2rem 3.5rem;
   font-weight: 900;
   color: #FFF;
   border-radius: 13px;
-  padding: 1.2rem 3.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
+}
+@media (max-width: 1294px) {
+  .modal__content--skills .skills__wrapper--js .skills__list--js {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 1294px) {
+  .modal__content--skills .skills__wrapper--js .skills__list--js {
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+  }
 }
 .modal__content--skills .skills__wrapper--pydb {
   grid-column: 1/6;
@@ -753,14 +775,25 @@ body .opacity {
 .modal__content--skills .skills__wrapper--pydb .skills__list--pydb {
   background-color: #264E5B;
   font-size: 1em;
+  padding: 1.2rem 8rem;
   font-weight: 900;
   color: #FFF;
   border-radius: 13px;
-  padding: 1.2rem 8rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
+}
+@media (max-width: 1294px) {
+  .modal__content--skills .skills__wrapper--pydb .skills__list--pydb {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 1294px) {
+  .modal__content--skills .skills__wrapper--pydb .skills__list--pydb {
+    padding-left: 3.8rem;
+    padding-right: 3.8rem;
+  }
 }
 .modal__content--skills .skills__wrapper--wp {
   grid-column: 1/6;
@@ -794,14 +827,25 @@ body .opacity {
 .modal__content--skills .skills__wrapper--wp .skills__list--wp {
   background-color: #AAC2C7;
   font-size: 1em;
+  padding: 1.2rem 5.5rem;
   font-weight: 900;
   color: #FFF;
   border-radius: 13px;
-  padding: 1.2rem 5.5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
+}
+@media (max-width: 1294px) {
+  .modal__content--skills .skills__wrapper--wp .skills__list--wp {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 1294px) {
+  .modal__content--skills .skills__wrapper--wp .skills__list--wp {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
 }
 .modal__content--skills .skills__wrapper--tools {
   grid-column: 1/4;
@@ -840,12 +884,23 @@ body .opacity {
 .modal__content--skills .skills__wrapper--tools .skills__list--tools {
   background-color: #54808D;
   font-size: 1em;
+  padding: 1.2rem 1.6rem;
   font-weight: 900;
   color: #FFF;
   border-radius: 13px;
-  padding: 1.2rem 1.6rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
+}
+@media (max-width: 1294px) {
+  .modal__content--skills .skills__wrapper--tools .skills__list--tools {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 1294px) {
+  .modal__content--skills .skills__wrapper--tools .skills__list--tools {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
