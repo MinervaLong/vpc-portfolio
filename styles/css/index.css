@@ -1073,3 +1073,35 @@ body .opacity {
     padding-right: 1rem;
   }
 }
+
+/* COLORS */
+/* FONTS */
+/* MODALS */
+html {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid black;*/
+}
+
+body {
+  font-family: "Roboto", serif;
+  color: #333333;
+  font-size: 1em;
+}
+
+body .opacity {
+  opacity: 8%;
+}
+
+/* Responsive */
+/*Modal basic styles */
+/* Skills Wrapper */
+/* Skill title styles */
+/* Skills list styles */
