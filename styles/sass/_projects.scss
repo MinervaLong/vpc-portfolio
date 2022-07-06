@@ -1,3 +1,36 @@
 @use 'basic';
 @use 'variables';
 @use 'mixins';
+
+.modal__content--projects {
+    .projectBox {
+        font-weight: variables.$fontWeight-bold;
+        @include projectBox-mixin();
+
+        .projectBox__heading__h3, .projectBox__heading__description {
+            font-style: italic;
+        }
+
+        .projectBox__links a {
+            color:white;
+        }
+
+        .projectBox__tags {
+            @include projects-skills-tag();
+        }
+        
+
+
+    }
+    .projectBox--avBg {
+        background-color: variables.$darkBlueColor;
+    }
+    .projectBox--whatDoBg, .projectBox--flashCardBg {
+        background-color: variables.$blueColor;
+    }
+
+    .projectBox--bookLandingBg, .projectBox--eventLandingBg, .projectBox--courseLandingBg {
+        background-color: variables.$lightBlueColor;
+    }
+   
+}

@@ -9,6 +9,8 @@
 /* Skills Wrapper */
 /* Skill title styles */
 /* Skills list styles */
+/* Project box style (no background-color) */
+/* Skills tag mixin (for Project box) */
 /* COLORS */
 /* FONTS */
 /* MODALS */
@@ -65,6 +67,8 @@ body .opacity {
 /* Skills Wrapper */
 /* Skill title styles */
 /* Skills list styles */
+/* Project box style (no background-color) */
+/* Skills tag mixin (for Project box) */
 /*NPM RUN SASS*/
 .nav {
   /* Center the menu in the middle of the layout */
@@ -389,6 +393,8 @@ body .opacity {
 /* Skills Wrapper */
 /* Skill title styles */
 /* Skills list styles */
+/* Project box style (no background-color) */
+/* Skills tag mixin (for Project box) */
 /* GENERAL STYLES */
 .modal {
   position: fixed;
@@ -496,6 +502,8 @@ body .opacity {
 /* Skills Wrapper */
 /* Skill title styles */
 /* Skills list styles */
+/* Project box style (no background-color) */
+/* Skills tag mixin (for Project box) */
 .modal__content--about {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -613,6 +621,8 @@ body .opacity {
 /* Skills Wrapper */
 /* Skill title styles */
 /* Skills list styles */
+/* Project box style (no background-color) */
+/* Skills tag mixin (for Project box) */
 .modal__content--skills {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -1105,3 +1115,47 @@ body .opacity {
 /* Skills Wrapper */
 /* Skill title styles */
 /* Skills list styles */
+/* Project box style (no background-color) */
+/* Skills tag mixin (for Project box) */
+.modal__content--projects .projectBox {
+  font-weight: 900;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 15px;
+  height: 190px;
+}
+.modal__content--projects .projectBox .projectBox__heading__h3, .modal__content--projects .projectBox .projectBox__heading__description {
+  font-style: italic;
+}
+.modal__content--projects .projectBox .projectBox__links a {
+  color: white;
+}
+.modal__content--projects .projectBox .projectBox__tags {
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 18px;
+}
+@media (max-width: 700px) {
+  .modal__content--projects .projectBox .projectBox__tags {
+    font-size: x-small;
+  }
+}
+.modal__content--projects .projectBox--avBg {
+  background-color: #264E5B;
+}
+.modal__content--projects .projectBox--whatDoBg, .modal__content--projects .projectBox--flashCardBg {
+  background-color: #54808D;
+}
+.modal__content--projects .projectBox--bookLandingBg, .modal__content--projects .projectBox--eventLandingBg, .modal__content--projects .projectBox--courseLandingBg {
+  background-color: #AAC2C7;
+}
