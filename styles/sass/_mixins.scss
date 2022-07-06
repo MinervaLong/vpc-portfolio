@@ -68,3 +68,32 @@
     align-content: stretch;
   }
 }
+
+
+/* Project box style (no background-color) */
+@mixin projectBox-mixin() {
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 15px;
+  height: 190px;
+}
+
+/* Skills tag mixin (for Project box) */
+@mixin projects-skills-tag(){
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 18px;
+  @include respond(small) {
+    font-size: x-small;
+  }
+}
