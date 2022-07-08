@@ -12,6 +12,8 @@
 /* Project box style (no background-color) */
 /* Skills tag mixin (for Project box) */
 /* Hits box mixin */
+/* Contact basic style box */
+/* Contact click */
 /* COLORS */
 /* FONTS */
 /* MODALS */
@@ -71,6 +73,8 @@ body .opacity {
 /* Project box style (no background-color) */
 /* Skills tag mixin (for Project box) */
 /* Hits box mixin */
+/* Contact basic style box */
+/* Contact click */
 /*NPM RUN SASS*/
 .nav {
   /* Center the menu in the middle of the layout */
@@ -398,6 +402,8 @@ body .opacity {
 /* Project box style (no background-color) */
 /* Skills tag mixin (for Project box) */
 /* Hits box mixin */
+/* Contact basic style box */
+/* Contact click */
 /* GENERAL STYLES */
 .modal {
   position: fixed;
@@ -508,6 +514,8 @@ body .opacity {
 /* Project box style (no background-color) */
 /* Skills tag mixin (for Project box) */
 /* Hits box mixin */
+/* Contact basic style box */
+/* Contact click */
 .modal__content--about {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -628,6 +636,8 @@ body .opacity {
 /* Project box style (no background-color) */
 /* Skills tag mixin (for Project box) */
 /* Hits box mixin */
+/* Contact basic style box */
+/* Contact click */
 .modal__content--skills {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -1123,6 +1133,8 @@ body .opacity {
 /* Project box style (no background-color) */
 /* Skills tag mixin (for Project box) */
 /* Hits box mixin */
+/* Contact basic style box */
+/* Contact click */
 .modal__content--projects {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -1352,6 +1364,8 @@ body .opacity {
 /* Project box style (no background-color) */
 /* Skills tag mixin (for Project box) */
 /* Hits box mixin */
+/* Contact basic style box */
+/* Contact click */
 .modal__content--hits {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -1471,4 +1485,154 @@ body .opacity {
     grid-column: 2/3;
     grid-row: 5/6;
   }
+}
+
+/* COLORS */
+/* FONTS */
+/* MODALS */
+html {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid black;*/
+}
+
+body {
+  font-family: "Roboto", serif;
+  color: #333333;
+  font-size: 1em;
+}
+
+body .opacity {
+  opacity: 8%;
+}
+
+/* Responsive */
+/*Modal basic styles */
+/* Skills Wrapper */
+/* Skill title styles */
+/* Skills list styles */
+/* Project box style (no background-color) */
+/* Skills tag mixin (for Project box) */
+/* Hits box mixin */
+/* Contact basic style box */
+/* Contact click */
+.modal__content--contact {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr 1fr auto auto auto auto;
+}
+.modal__content--contact .contacName {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  margin-bottom: 0.8rem;
+}
+.modal__content--contact .contacName .contactName__name {
+  margin: 0;
+  font-weight: 900;
+  font-size: 30pt;
+}
+.modal__content--contact .contacName .contactName__name .contactName__lastName {
+  color: #264E5B;
+}
+.modal__content--contact .mailBox {
+  grid-column: 1/6;
+  grid-row: 3/4;
+  padding: 1rem;
+  background-color: #54808D;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.modal__content--contact .mailBox .contactBox__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.modal__content--contact .mailBox .contactBox__wrapper .mailBox__icon img {
+  width: 45px;
+}
+.modal__content--contact .mailBox .contactBox__wrapper .mailBox__mail {
+  font-weight: 100;
+  font-size: 1.5em;
+}
+.modal__content--contact .mailBox .mailBox__buttonWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.modal__content--contact .mailBox .mailBox__buttonWrapper .mailBox__copyBtn {
+  margin-left: 1.5rem;
+}
+.modal__content--contact .mailBox .mailBox__buttonWrapper .mailBox__sendBtn, .modal__content--contact .mailBox .mailBox__buttonWrapper .mailBox__copyBtn {
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  font-size: 1em;
+  font-weight: 100;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+.modal__content--contact .telegramBox {
+  grid-column: 1/5;
+  grid-row: 4/5;
+  padding: 1rem;
+  background-color: #264E5B;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal__content--contact .telegramBox .contactBox__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.modal__content--contact .telegramBox .contactBox__wrapper .telegramBox__icon img {
+  width: 45px;
+}
+.modal__content--contact .telegramBox .contactBox__wrapper .telegramBox__telegram {
+  font-weight: 100;
+  font-size: 1.5em;
+}
+.modal__content--contact .telegramBox .telegramBox__linkWrapper {
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  font-size: 1em;
+  font-weight: 100;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+}
+.modal__content--contact .telegramBox .telegramBox__linkWrapper a {
+  text-decoration: none;
+}
+.modal__content--contact .contact__heading {
+  grid-column: 4/8;
+  grid-row: 5/6;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
 }
