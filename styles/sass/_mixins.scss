@@ -103,3 +103,19 @@
     font-size: x-small;
   }
 }
+
+/* Hits box mixin */
+@mixin hits-box() {
+  color: white;
+  padding: 2rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 15px;
+  @include general-responsive(small) {
+    padding: 1rem;
+  }
+
+}
+
