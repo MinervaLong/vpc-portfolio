@@ -11,6 +11,7 @@
 /* Skills list styles */
 /* Project box style (no background-color) */
 /* Skills tag mixin (for Project box) */
+/* Hits box mixin */
 /* COLORS */
 /* FONTS */
 /* MODALS */
@@ -69,6 +70,7 @@ body .opacity {
 /* Skills list styles */
 /* Project box style (no background-color) */
 /* Skills tag mixin (for Project box) */
+/* Hits box mixin */
 /*NPM RUN SASS*/
 .nav {
   /* Center the menu in the middle of the layout */
@@ -395,6 +397,7 @@ body .opacity {
 /* Skills list styles */
 /* Project box style (no background-color) */
 /* Skills tag mixin (for Project box) */
+/* Hits box mixin */
 /* GENERAL STYLES */
 .modal {
   position: fixed;
@@ -504,6 +507,7 @@ body .opacity {
 /* Skills list styles */
 /* Project box style (no background-color) */
 /* Skills tag mixin (for Project box) */
+/* Hits box mixin */
 .modal__content--about {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -623,6 +627,7 @@ body .opacity {
 /* Skills list styles */
 /* Project box style (no background-color) */
 /* Skills tag mixin (for Project box) */
+/* Hits box mixin */
 .modal__content--skills {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -1117,6 +1122,7 @@ body .opacity {
 /* Skills list styles */
 /* Project box style (no background-color) */
 /* Skills tag mixin (for Project box) */
+/* Hits box mixin */
 .modal__content--projects {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
