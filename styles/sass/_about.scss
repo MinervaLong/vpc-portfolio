@@ -14,7 +14,7 @@
     "button . . . header header"
     ;
 
-    @include respond(medium) {
+    @include general-responsive(medium) {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 10% 30% 45%;
         grid-template-areas:
@@ -25,7 +25,7 @@
         ;
     }
 
-    @include respond(small){ 
+    @include general-responsive(small){ 
         grid-template-columns: auto 50%;
         grid-template-rows: 8% 1fr 1fr ;
         row-gap: 3%;
@@ -63,7 +63,7 @@
                 font-weight: variables.$fontWeight-thin;
                 font-size: 20pt;
 
-                @include respond(small){
+                @include general-responsive(small){
                     font-size: 16pt;
                 }
             }
@@ -100,7 +100,7 @@
             font-size: 12pt;
             letter-spacing: -1;
 
-            @include respond(small) {
+            @include general-responsive(small) {
                 padding: 0.8rem 0.6rem;
                 border-radius: 20px;
             }
