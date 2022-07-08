@@ -21,7 +21,7 @@
     opacity: 0;
     transition: all 0.35s ease-in; 
     
-    @include respond(small) {
+    @include general-responsive(small) {
         padding: 0rem;
     }
 
@@ -35,7 +35,7 @@
         overflow: auto;
         cursor: default;
 
-        @include respond(small) {
+        @include general-responsive(small) {
             width: 100vw;
             height: 100vh;
         }
