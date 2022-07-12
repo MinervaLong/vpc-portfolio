@@ -97,7 +97,6 @@
   @include general-responsive(medium) {
     font-size: smaller;
   }
-
   
   @include general-responsive(small) {
     font-size: x-small;
@@ -116,6 +115,36 @@
   @include general-responsive(small) {
     padding: 1rem;
   }
-
 }
 
+/* Contact basic style box */
+@mixin contact-basic-style($bgColor) {
+  padding: 1rem;
+  background-color: $bgColor;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  flex-wrap: wrap;
+}
+
+/* Contact click */
+@mixin contact-click-mixin($padding) {
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  font-size: variables.$fontSize-body;
+  font-weight: variables.$fontWeight-thin;
+  padding: $padding;
+  @include general-responsive(medium) {
+    padding: 0.3rem 1rem;
+    border-radius: 18px;
+  }
+  @include general-responsive(small) {
+    font-size: xx-small;
+  }
+  border: none;
+  cursor: pointer;  
+}
