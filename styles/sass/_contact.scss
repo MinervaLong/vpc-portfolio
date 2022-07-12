@@ -6,20 +6,42 @@
 
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 1fr 1fr auto auto auto auto;
+    grid-template-rows: 5rem auto auto auto auto 1fr auto;
+
+    @include general-responsive(medium) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
+    @include general-responsive(small) {
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 5rem  auto 1fr 1fr;
+    }
 
     .contacName {     
         grid-column: 1 / 3;
         grid-row: 2 / 3; 
-        margin-bottom: 0.8rem; 
+        margin-bottom: 0.8rem;
 
+        @include general-responsive(medium) {
+            grid-column: 1 / 3;
+            grid-row: 3 / 4;
+        }
+        @include general-responsive(small) {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }        
+        
         .contactName__name {
             margin: 0;
             font-weight:900;
             font-size: 30pt;
+            @include general-responsive(small) {
+                font-size: 18pt;
+            }
 
             .contactName__lastName {
-                color: variables.$darkBlueColor;
+                color: variables.$blueColor;
             }
         }       
     }
@@ -27,6 +49,17 @@
     .mailBox {
         grid-column: 1 / 6;
         grid-row: 3 / 4;
+        
+        @include general-responsive(medium) {
+            grid-column: 1 / 5;
+            grid-row: 4 / 5;
+        }
+
+        @include general-responsive(small) {
+            grid-column: 1 / 3;
+            grid-row: 4 / 5;
+        }
+
         @include contact-basic-style(variables.$blueColor);
         margin-bottom: 1rem; 
         display: flex;
@@ -43,21 +76,28 @@
 
             .mailBox__icon img {
                 width: 45px;
+                @include general-responsive(small) {
+                    width: 30px;
+                }
             }
     
             .mailBox__mail {
                 font-weight: variables.$fontWeight-thin;
                 font-size: variables.$fontSize-h2;
+                @include general-responsive(medium) {
+                    font-size:large;
+                   
+                }
             }
 
-        }
-
-       
+        }       
 
         .mailBox__buttonWrapper {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
+
+         
             
             .mailBox__copyBtn  {
                 margin-left: 1.5rem;
@@ -73,6 +113,16 @@
     .telegramBox {
         grid-column: 1 / 5;
         grid-row: 4 / 5;
+        
+        @include general-responsive(medium) {
+            grid-column: 1 / 4;
+            grid-row: 5 / 6;
+        }
+
+        @include general-responsive(small) {
+            grid-column: 1 / 3;
+            grid-row: 5 / 6;
+        }
         @include contact-basic-style(variables.$darkBlueColor);
 
         .contactBox__wrapper {
@@ -80,21 +130,32 @@
             flex-direction: row;
             justify-content:space-between;
             align-items: center;
+           
             gap: 1rem;
 
             .telegramBox__icon img {
                 width: 45px;
+
+                @include general-responsive(small) {
+                    width: 30px;
+                }
             }
 
             .telegramBox__telegram {
                 font-weight: variables.$fontWeight-thin;
                 font-size: variables.$fontSize-h2;
+                @include general-responsive(medium) {
+                    font-size: 15pt;
+                }
+
+                @include general-responsive(small) {
+                    font-size: 12pt
+                }
             }
-        }
-          
+        }          
 
         .telegramBox__linkWrapper {
-            @include contact-click-mixin(1rem);
+            @include contact-click-mixin(1.2rem 1rem 1.2rem 1rem);
 
             a {
                 text-decoration: none;
@@ -104,9 +165,22 @@
 
     .contact__heading {
         grid-column: 4 / 8;
-        grid-row: 5 / 6;
+        grid-row:  6/ 7;
         display: flex;
         flex-direction: row;
         justify-content: end;
+        
+        @include general-responsive(medium) {
+            grid-column: 1 / 5;
+            grid-row: 8 / 9;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;            
+        }
+
+        @include general-responsive(small) {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+        }
     }
 }

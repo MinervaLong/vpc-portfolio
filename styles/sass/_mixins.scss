@@ -127,6 +127,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center; 
+  flex-wrap: wrap;
 }
 
 /* Contact click */
@@ -137,6 +138,13 @@
   font-size: variables.$fontSize-body;
   font-weight: variables.$fontWeight-thin;
   padding: $padding;
+  @include general-responsive(medium) {
+    padding: 0.3rem 1rem;
+    border-radius: 18px;
+  }
+  @include general-responsive(small) {
+    font-size: xx-small;
+  }
   border: none;
   cursor: pointer;  
 }
