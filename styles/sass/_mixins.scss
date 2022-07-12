@@ -1,19 +1,150 @@
+@use 'variables';
 
-
-/* Responsive*/
-@mixin respond($breakpoint) {
-    @if $breakpoint == medium {
-      @media (max-width: 1000px) { @content };
-    }
-    @if $breakpoint == small {
-      @media (max-width: 700px) { @content };
-    }
+/* Responsive */
+@mixin general-responsive($breakpoint) {
+  @if $breakpoint == medium {
+    @media (max-width: 1294px) { @content };
+  }
+  @if $breakpoint == small {
+    @media (max-width: 700px) { @content };
+  }
 }
 
-/*Modal basic styles*/
-
+/*Modal basic styles */
 @mixin basic-modal-style($borderColor) {
-    border: 10px solid $borderColor;
-    padding: 3rem;
+  border: 10px solid $borderColor;
+  padding: 3rem;
+}
 
+/* Skills Wrapper */
+@mixin skills-wrapper-flex($marginLeft) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  margin-left: $marginLeft;
+  @include general-responsive(small) {
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 0;
+  }
+}
+
+/* Skill title styles */
+@mixin skill-title-style() {
+  font-size: 2.3rem;
+  @include general-responsive(medium) {
+    font-size: 1.3rem;
+  }
+  padding-right: 1.2rem;
+  font-weight: variables.$fontWeight-bold;
+  color: variables.$lightFontColor;
+  opacity: 8%;
+  text-align: center;
+  @include general-responsive(small) {
+    text-align: left;
+  }  
+  
+}
+
+/* Skills list styles */
+@mixin skills-list-style($bgColor, $paddingSides) {
+  background-color: $bgColor;
+  font-size: variables.$fontSize-body;
+  @include general-responsive(medium) {
+    font-size: 0.8em;
+  }
+  padding: 1.2rem $paddingSides;
+  font-weight: variables.$fontWeight-bold;
+  color: #FFF;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  @include general-responsive(small) {
+    justify-content: flex-start;
+    align-content: stretch;
+  }
+}
+
+
+/* Project box style (no background-color) */
+@mixin projectBox-mixin() {
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 15px;
+  height: 10rem;
+}
+
+/* Skills tag mixin (for Project box) */
+@mixin projects-skills-tag(){
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 18px;
+  font-size: smaller;
+  @include general-responsive(medium) {
+    font-size: smaller;
+  }
+  
+  @include general-responsive(small) {
+    font-size: x-small;
+  }
+}
+
+/* Hits box mixin */
+@mixin hits-box() {
+  color: white;
+  padding: 2rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 15px;
+  @include general-responsive(small) {
+    padding: 1rem;
+  }
+}
+
+/* Contact basic style box */
+@mixin contact-basic-style($bgColor) {
+  padding: 1rem;
+  background-color: $bgColor;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+  flex-wrap: wrap;
+}
+
+/* Contact click */
+@mixin contact-click-mixin($padding) {
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  font-size: variables.$fontSize-body;
+  font-weight: variables.$fontWeight-thin;
+  padding: $padding;
+  @include general-responsive(medium) {
+    padding: 0.3rem 1rem;
+    border-radius: 18px;
+  }
+  @include general-responsive(small) {
+    font-size: xx-small;
+  }
+  border: none;
+  cursor: pointer;  
 }

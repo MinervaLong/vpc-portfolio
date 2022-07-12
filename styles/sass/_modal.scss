@@ -21,36 +21,33 @@
     opacity: 0;
     transition: all 0.35s ease-in; 
     
-    @include respond(small) {
+    @include general-responsive(small) {
         padding: 0rem;
     }
 
       
     .modal__dialog {
         position: relative;
-        width: 80vw;
-        height: 75vh;
+        width: 85vw;
+        height: 80vh;
         border-radius: 5px;
-        background-color: rgb(247, 234, 234);
+        background-color: white;
         overflow: auto;
         cursor: default;
 
-        @include respond(small) {
+        @include general-responsive(small) {
             width: 100vw;
             height: 100vh;
         }
         
-        .modal__header {
+        .modal__closeWrapper {
             display: flex;
             align-items: center;
             justify-content: flex-end;
             font-size: 1.5rem;
 
-            .modal__heading {
-                align-self: center;
-            }
-
-            .modal__headingCircles {
+          
+            .modal__circles {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
@@ -59,11 +56,10 @@
             }
         }
 
-
         .modal__close {            
             cursor: pointer;
         }
-        
+       
     }
  
 }
@@ -74,20 +70,21 @@
     opacity: 1;
 }
 
+
 /* PARTICULAR STYLES */
 
-/* About modal */
-
-.aboutStyle, .mailStyle {
+.modal__dialog--aboutStyle, .modal__dialog--mailStyle {
     @include basic-modal-style(variables.$blueColor); 
 }
 
-.portfStyle {
+.modal__dialog--portfStyle {
     @include basic-modal-style(variables.$darkBlueColor); 
 }
 
-.skillsStyle, .hitsStyle {
+.modal__dialog--skillsStyle, .modal__dialog--hitsStyle {
     @include basic-modal-style(variables.$lightBlueColor); 
 }
+
+
 
 
