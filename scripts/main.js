@@ -32,6 +32,8 @@ document.addEventListener('click', e => {
 });
 
 
+// CONTACT BUTTONS
+
 // Copy functionality for mail
 
 const copyToClipBoard = () => {
@@ -63,8 +65,4 @@ const toolTipOut = () => {
 }
 
 
-
-// undefined vanesa.perea@gmail.com
-//-Añadir la funcionalidad de send
-//-Añadir la funcionalidad de Telegram
 
