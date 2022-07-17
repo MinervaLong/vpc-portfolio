@@ -88,6 +88,8 @@
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
+
+       
         
 
         button {
@@ -95,18 +97,19 @@
             border-radius: 14px;
             border: 1px solid variables.$darkBlueColor;
             background-color: variables.$darkBlueColor;
-            color: white;
             font-weight: bolder;
             font-size: 12pt;
             letter-spacing: -1;
 
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
             @include general-responsive(small) {
                 padding: 0.8rem 0.6rem;
                 border-radius: 20px;
-            }
-
-
-            
+            }            
         }
     }
 
