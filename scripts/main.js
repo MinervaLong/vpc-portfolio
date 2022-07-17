@@ -31,3 +31,38 @@ document.addEventListener('click', e => {
     }
 });
 
+
+// CONTACT BUTTONS
+
+// Copy functionality for mail
+
+const copyToClipBoard = () => {
+    // Get the text
+    let mailText = document.getElementById('mailID').textContent;
+    console.log(mailText)
+    let toolTip = document.getElementById('copyToolTip');
+    let tooltipWrap = document.getElementById('toolTipWrapper');
+
+     // Copy the text inside clipboard
+    navigator.clipboard.writeText(mailText)
+    .then(() => {
+        tooltipWrap.className = "tooltip";
+        toolTip.className = "toolTipText"; 
+        toolTip.innerHTML = 'Copied!';
+    })
+    .catch(err => {
+        toolTip.innerHTML = 'Error!';
+    })
+
+}
+
+const toolTipOut = () => {
+    let toolTip = document.getElementById('copyToolTip');
+    let tooltipWrap = document.getElementById('toolTipWrapper');
+    tooltipWrap.classList.remove("tooltip");
+    toolTip.classList.remove("toolTipText");
+    toolTip.style.display = 'none'; 
+}
+
+
+
