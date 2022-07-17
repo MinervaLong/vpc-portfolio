@@ -388,11 +388,15 @@
                     <div class="mailBox">
                         <div class="contactBox__wrapper">
                             <span class="mailBox__icon"><img src="./assets/icons/icons_mail.png" alt="Mail"></span>
-                            <p class="mailBox__mail">vanesa.perea@gmail.com</p>
+                            <p id="mailID" class="mailBox__mail">vanesa.perea@gmail.com</p>
                         </div>                        
                         <div class="mailBox__buttonWrapper">
                             <button class="mailBox__sendBtn">send</button>
-                            <button class="mailBox__copyBtn">copy</button>
+                            <div id="toolTipWrapper" class="">
+                                <button id="copyBtn" onclick="copyToClipBoard()" onmouseout="toolTipOut()" class="mailBox__copyBtn">
+                                <span class="" id="copyToolTip"></span>copy</button>
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="telegramBox">

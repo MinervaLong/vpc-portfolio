@@ -1632,8 +1632,42 @@ body .opacity {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.modal__content--contact .mailBox .mailBox__buttonWrapper .mailBox__copyBtn {
-  margin-left: 1.5rem;
+.modal__content--contact .mailBox .mailBox__buttonWrapper .mailBox__sendBtn {
+  margin-right: 1.5rem;
+}
+.modal__content--contact .mailBox .mailBox__buttonWrapper .tooltip {
+  position: relative;
+  display: inline-block;
+}
+.modal__content--contact .mailBox .mailBox__buttonWrapper .toolTipText {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.modal__content--contact .mailBox .mailBox__buttonWrapper .tooltip .toolTipText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.modal__content--contact .mailBox .mailBox__buttonWrapper .tooltip:hover .toolTipText {
+  visibility: visible;
+  opacity: 1;
 }
 .modal__content--contact .mailBox .mailBox__buttonWrapper .mailBox__sendBtn, .modal__content--contact .mailBox .mailBox__buttonWrapper .mailBox__copyBtn {
   background-color: white;
